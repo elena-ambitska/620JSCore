@@ -42,3 +42,12 @@ console.log(typeof maritalStatus);
 console.log(typeof studentName);
 console.log(typeof address);
 console.log(typeof experience);
+
+//Task 7
+
+let login = prompt('enter your login', 'User');
+let password = prompt('enter your password', 'qwerty');
+let email = prompt('enter your email', 'usermale@gmail.com');
+
+let message = `Dear ${login}, your email is ${email}, your password is ${password}.`
+alert (message);
