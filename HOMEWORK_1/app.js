@@ -22,10 +22,10 @@ let car = {
 // Task 5
 let isAdult = confirm("Are you adalt?");
 
-if(isAdult === true){
-console.log("You are welcome !");
+if (isAdult === true) {
+    console.log("You are welcome !");
 } else {
-console.log("Bye 😈");
+    console.log("Bye 😈");
 }
 
 //Task 6
@@ -50,4 +50,17 @@ let password = prompt('enter your password', 'qwerty');
 let email = prompt('enter your email', 'usermale@gmail.com');
 
 let message = `Dear ${login}, your email is ${email}, your password is ${password}.`
-alert (message);
+alert(message);
+
+//Task 8
+const secondInMinute = 60;
+const minutesInHour = 60;
+
+let secondInHour = secondInMinute * minutesInHour;
+alert(secondInHour);
+const hoursInDay = 24;
+let secondsInDay = secondInHour * hoursInDay;
+alert(secondsInDay);
+const daysInMonth = 30;
+let secondsInMonth = secondsInDay * daysInMonth;
+alert(secondsInMonth);
