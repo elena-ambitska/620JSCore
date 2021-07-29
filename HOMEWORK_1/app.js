@@ -27,3 +27,18 @@ console.log("You are welcome !");
 } else {
 console.log("Bye 😈");
 }
+
+//Task 6
+const studentName = 'Lena';
+const studentLastName = 'Ambitska';
+const group = 620;
+const yearBD = 1992;
+const maritalStatus = false;
+let address;
+let experience = null;
+
+console.log(typeof group, typeof yearBD);
+console.log(typeof maritalStatus);
+console.log(typeof studentName);
+console.log(typeof address);
+console.log(typeof experience);
