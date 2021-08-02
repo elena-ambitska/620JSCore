@@ -37,11 +37,13 @@ const maritalStatus = false;
 let address;
 let experience = null;
 
-console.log(typeof group, typeof yearBD);
-console.log(typeof maritalStatus);
-console.log(typeof studentName);
-console.log(typeof address);
-console.log(typeof experience);
+console.log(yearBD +' is: ' + typeof yearBD);
+console.log(group +' is: ' + typeof group);
+console.log(maritalStatus +' is: ' + typeof maritalStatus);
+console.log(studentName +' is: ' + typeof studentName);
+console.log(studentLastName +' is: ' + typeof studentLastName);
+console.log(address +' is: ' + typeof address);
+console.log( experience +' is: ' + typeof experience);
 
 //Task 7
 
@@ -50,17 +52,25 @@ let password = prompt('enter your password', 'qwerty');
 let email = prompt('enter your email', 'usermale@gmail.com');
 
 let message = `Dear ${login}, your email is ${email}, your password is ${password}.`
-alert(message);
+ alert(message);
 
 //Task 8
 const secondInMinute = 60;
 const minutesInHour = 60;
 
-let secondInHour = secondInMinute * minutesInHour;
-alert(secondInHour);
+
+let secondsInHour = document.getElementById('secondsInHour');
+let secondHourResult = secondInMinute * minutesInHour;
+secondsInHour.innerHTML = secondHourResult;
+
 const hoursInDay = 24;
-let secondsInDay = secondInHour * hoursInDay;
-alert(secondsInDay);
+
+let secondsInDay = document.getElementById('secondsInDay');
+let secondDayResult = secondHourResult * hoursInDay
+secondsInDay.innerHTML = secondDayResult;
+
 const daysInMonth = 30;
-let secondsInMonth = secondsInDay * daysInMonth;
-alert(secondsInMonth);
+
+let secondsInMonth = document.getElementById('secondsInMonth');
+let secondMonthResult =  secondDayResult * daysInMonth;
+secondsInMonth.innerHTML = secondMonthResult;
