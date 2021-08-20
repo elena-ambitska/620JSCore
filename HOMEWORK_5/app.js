@@ -57,7 +57,7 @@ console.log("Current course: " + stud1.showCourse());
 //**************************Task4*****************/
 
 class Worker {
-    _experience = 1.2;
+    #experience = 1.2;
     constructor(fullName, dayRate, workingDays) {
         this.fullName = fullName;
         this.dayRate = dayRate;
@@ -67,13 +67,13 @@ class Worker {
         return this.dayRate * this.workingDays;
     }
     showSalaryWithExperience() {
-        return this.showSalary() * this._experience;
+        return this.showSalary() * this.#experience;
     }
     get showExp() {
-        return this._experience
+        return this.#experience
     }
     set setExp(exp) {
-        this._experience = exp;
+        this.#experience = exp;
     }
 }
 
@@ -154,5 +154,5 @@ function handleFigures(figures) {
     }, 0))
 }
 
-const figures = [new Triangle(4, 5), new Square(7), new Circle(5), new Student(3)];
+const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
 console.log(handleFigures(figures));
