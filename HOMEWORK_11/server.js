@@ -8,7 +8,7 @@ import {
 
 http.createServer(function (request, response) {
     response.writeHead(200, {
-        'Content-Type': 'text/html charset=utf8'
+        'Content-Type': 'text/html; charset=utf8'
     });
     const userName = os.userInfo().username;
     const typeOS = os.type();
